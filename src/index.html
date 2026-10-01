@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevOps Test - CI/CD Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🚀 DevOps Test</h1>
+    <p>Quy trình CI/CD: GitHub → Jenkins → Build → Deploy → Telegram</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Thông tin dự án</h2>
+      <ul>
+        <li><strong>Project:</strong> devops-test</li>
+        <li><strong>Tác giả:</strong> Bùi Hải Trung</li>
+        <li><strong>Branch:</strong> main</li>
+        <li><strong>Build:</strong> #__BUILD_NUMBER__</li>
+        <li><strong>Thời gian build:</strong> __BUILD_TIME__</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Các bước của pipeline</h2>
+      <ol class="steps">
+        <li>Developer push code lên GitHub</li>
+        <li>Jenkins nhận webhook và tự chạy</li>
+        <li>Install dependencies &amp; Build</li>
+        <li>Deploy website</li>
+        <li>Gửi thông báo Telegram</li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>Kiểm tra JavaScript</h2>
+      <button id="btn">Bấm thử</button>
+      <p id="msg"></p>
+    </section>
+  </main>
+
+  <footer>© 2026 - Bài kiểm tra thực hành DevOps</footer>
+  <script src="app.js"></script>
+</body>
+</html>
